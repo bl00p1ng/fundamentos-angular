@@ -44,3 +44,12 @@
 <p>Válido: {{ nameInput.valid }}</p>
 <input type="number" min="10" max="18" required #ageInput="ngModel" [(ngModel)]="age" />
 <p>Edad: {{ ageInput.valid }}</p>
+
+<hr>
+
+<h1>*ngIf</h1>
+<input type="text" [(ngModel)]="name" />
+<p *ngIf="name === 'andres'; else elseBlock">Soy Andrés</p>
+<ng-template #elseBlock>
+  <p>Bloque de else</p>
+</ng-template>
