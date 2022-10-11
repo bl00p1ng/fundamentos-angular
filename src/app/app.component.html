@@ -77,3 +77,20 @@
     <p>Precio: ${{ product.price }}</p>
   </div>
 </div>
+
+<hr>
+
+<h1>[ngSwitch]</h1>
+<input type="text" [(ngModel)]="name" />
+<div [ngSwitch]="name">
+  <p *ngSwitchCase="'Andrés'">
+    La persona es Andrés
+  </p>
+  <p *ngSwitchCase="'Felipe'">
+    La persona es Felipe
+  </p>
+  <p *ngSwitchCase="'Daniela'">
+    La persona es Daniela
+  </p>
+  <p *ngSwitchDefault>No hace match</p>
+</div>
