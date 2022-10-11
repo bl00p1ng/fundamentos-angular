@@ -35,3 +35,12 @@
 </div>
 <p>Nombre: {{ name }}</p>
 <input type="text" [value]="name" (keyup)="chageName($event)" />
+
+<hr>
+
+<h1>ngModel</h1>
+<p>Nombre: {{ name }}</p>
+<input type="text" required #nameInput="ngModel" [(ngModel)]="name" />
+<p>Válido: {{ nameInput.valid }}</p>
+<input type="number" min="10" max="18" required #ageInput="ngModel" [(ngModel)]="age" />
+<p>Edad: {{ ageInput.valid }}</p>
