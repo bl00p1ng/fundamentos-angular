@@ -9,3 +9,12 @@
 <input type="text" [value]="name" />
 <progress max="100" [value]="age"></progress>
 <img [src]="waifu" alt="Mi Lucy">
+
+<hr>
+
+<h1>Event Binding</h1>
+<button [disabled]="btnDisabled">Enviar</button>
+<button (click)="toggleButton()">Activar/Desactivar</button>
+<p>Edad: {{ age }}</p>
+<button (click)="incrementAge()">+</button>
+<button (click)="decrementAge()">-</button>
