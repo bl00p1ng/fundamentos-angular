@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name: string = 'Andrés';
   age: number = 21;
-  waifu = 'https://i.ibb.co/vvrkgDr/lucy.jpg';
+  waifu: string = 'https://i.ibb.co/vvrkgDr/lucy.jpg';
+  btnDisabled: boolean = true;
 }
