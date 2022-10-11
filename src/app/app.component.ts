@@ -23,4 +23,16 @@ export class AppComponent {
   decrementAge() {
     this.age -= 1;
   }
+
+  onScroll(event: Event) {
+    const element = event.target as HTMLElement;
+    console.log(element.scrollTop);
+
+  }
+
+  chageName(event: Event) {
+    const element = event.target as HTMLInputElement;
+
+    this.name = element.value;
+  }
 }

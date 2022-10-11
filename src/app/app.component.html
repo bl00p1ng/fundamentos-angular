@@ -18,3 +18,20 @@
 <p>Edad: {{ age }}</p>
 <button (click)="incrementAge()">+</button>
 <button (click)="decrementAge()">-</button>
+
+<div class="box" (scroll)="onScroll($event)">
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Ipsam animi facilis reiciendis, repellendus possimus
+    voluptatum id mollitia, cum, adipisci saepe accusamus
+    illo esse maiores beatae assumenda iure rerum quod a.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Ipsam animi facilis reiciendis, repellendus possimus
+    voluptatum id mollitia, cum, adipisci saepe accusamus
+    illo esse maiores beatae assumenda iure rerum quod a.
+  </p>
+</div>
+<p>Nombre: {{ name }}</p>
+<input type="text" [value]="name" (keyup)="chageName($event)" />
