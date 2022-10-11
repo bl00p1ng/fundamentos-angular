@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'yard-sale-angular';
+  name: string = 'Andrés';
+  age: number = 21;
+  waifu = 'https://i.ibb.co/vvrkgDr/lucy.jpg';
 }
