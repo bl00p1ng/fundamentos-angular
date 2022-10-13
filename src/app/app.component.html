@@ -94,3 +94,20 @@
   </p>
   <p *ngSwitchDefault>No hace match</p>
 </div>
+
+<hr>
+
+<h1>Class & Style</h1>
+<input type="text" required #nameInput2="ngModel" [(ngModel)]="name" />
+<p class="message-error" [class.invalid]="nameInput2.invalid">Este campo es obligatorio</p>
+<label>Nombre:</label>
+<input type="text" required #nameInput3="ngModel" [(ngModel)]="name" />
+<p [style.font-style]="nameInput3.invalid ? 'italic' : 'normal'">Un poco de texto</p>
+<div class="colums">
+  <div>
+<input type="text" [(ngModel)]="widthImg" />
+  </div>
+  <div>
+    <img [style.width.px]="widthImg" [src]="waifu" alt="Lucy" />
+  </div>
+</div>

@@ -16,6 +16,25 @@
   }
 }
 
+.message-error {
+  width: fit-content;
+  display: block;
+  background-color: crimson;
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: white;
+  opacity: 0;
+  transition: all linear .5s;
+  &.invalid {
+    opacity: 1;
+  }
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 @media screen and (min-width: 550px) {
   .products--grid {
     display: grid;

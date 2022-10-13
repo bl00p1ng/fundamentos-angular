@@ -14,6 +14,7 @@ export class AppComponent {
   btnDisabled: boolean = true;
   names: string[] = ['Andrés', 'Felipe', 'Daniela', 'Gabriela'];
   newName: string = '';
+  widthImg: number = 50;
   products: Product[] = [
     {
       name: 'EL mejor juguete',
