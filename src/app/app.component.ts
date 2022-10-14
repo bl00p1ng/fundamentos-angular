@@ -15,6 +15,11 @@ export class AppComponent {
   names: string[] = ['Andrés', 'Felipe', 'Daniela', 'Gabriela'];
   newName: string = '';
   widthImg: number = 50;
+  box = {
+    width: 100,
+    height: 100,
+    background: 'crimson'
+  }
   products: Product[] = [
     {
       name: 'EL mejor juguete',
