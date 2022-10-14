@@ -140,3 +140,52 @@
   }">
   </div>
 </div>
+
+<hr>
+
+<h1>Formulario</h1>
+<form #registerForm="ngForm" (ngSubmit)="onRegister()">
+  <div class="input-group">
+    <label for="name">Nombre</label>
+    <input
+      id="name"
+      type="text"
+      [(ngModel)]="register.name"
+      name="username"
+      required
+    />
+    <p>
+      Mensajes de error
+    </p>
+  </div>
+
+  <div class="input-group">
+    <label for="email">Email</label>
+    <input
+      id="email"
+      type="email"
+      [(ngModel)]="register.email"
+      name="email"
+      required
+    />
+    <p>
+      Mensajes de error
+    </p>
+  </div>
+
+  <div class="input-group">
+    <label for="password">Contraseña</label>
+    <input
+      id="password"
+      type="password"
+      [(ngModel)]="register.password"
+      name="password"
+      required
+    />
+    <p>
+      Mensajes de error
+    </p>
+  </div>
+
+  <input [disabled]="registerForm.invalid" type="submit" value="Registrar">
+</form>
